@@ -78,7 +78,7 @@ header {
     color: var(--primary-color);
     font-weight: 600;
     width: 70%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .banner-button {
@@ -148,5 +148,41 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+/* Medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar {
+        padding: 30px 50px;
+        order: 2;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .home,
+    .products,
+    .sign-up,
+    .log-in,
+    .search-icon {
+        display: none;
+    }
+    .banner-container {
+        padding: 50px 50px;
+    }
+    .banner-image img{
+        width: 302px;
+        
+    }
+    .banner-title {
+        font-size: 1.75rem;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+    .banner-description{
+        width: 90%;
+        margin-bottom: 20px;
     }
 }
